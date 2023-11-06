@@ -1,0 +1,10 @@
+{
+    "name": "distantmagic/graphql-swoole-promise-adapter",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Distantmagic\\GraphqlSwoolePromiseAdapter\\": "src/"
+        }
+    },
+    "require": {}
+}
