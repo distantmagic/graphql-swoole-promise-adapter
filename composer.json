@@ -8,8 +8,7 @@
         }
     },
     "require": {
-        "distantmagic/swoole-futures": "^0.1.0",
-        "php-ds/php-ds": "^1.4"
+        "distantmagic/swoole-futures": "^0.1.0"
     },
     "require-dev": {
         "swoole/ide-helper": "^5.1",

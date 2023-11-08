@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3440e760987ba80a40816b5a703d0e02",
+    "content-hash": "2ac73fd88732af352e3fabdc82c388db",
     "packages": [
         {
             "name": "distantmagic/swoole-futures",
