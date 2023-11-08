@@ -31,6 +31,9 @@ readonly class GraphQLResolverPromiseAdapterRegistry
         $this->thenablePromiseAdapter = new WeakMap();
     }
 
+    /**
+     * @param mixed $thenable explicitly mixed for typechecks
+     */
     public function canConvert($thenable): bool
     {
         if (!is_object($thenable)) {
@@ -83,10 +86,6 @@ readonly class GraphQLResolverPromiseAdapterRegistry
      */
     private function findAdapter(object $thenable): ?GraphQLResolverPromiseAdapterInterface
     {
-        /**
-         * @var class-string                           $supportedClassName
-         * @var GraphQLResolverPromiseAdapterInterface $adapter
-         */
         foreach ($this->resolverPromiseAdapters as $supportedClassName => $adapter) {
             if (is_a($thenable, $supportedClassName, true)) {
                 /**
